@@ -1,0 +1,143 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta name="robots" content="none"/>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<title>Error Page</title>
+<style type="text/css">
+body{margin:0;padding:0;font:14px/1.6 Arial,Sans-serif;}
+a:link,a:visited{color:#007ab7;text-decoration:none;}
+h1{
+	position:relative;
+	z-index:2;
+	width:540px;
+	height:0;
+	margin:110px auto 15px;
+	padding:230px 0 0;
+	overflow:hidden;
+	xxxxborder:1px solid;
+	background-image: url(http://ww3.sinaimg.cn/large/a83bb572jw1eb2o47x0jgj20f006e3yz.jpg);
+	background-repeat: no-repeat;
+}
+h2{
+	position:absolute;
+	top:55px;
+	left:233px;
+	margin:0;
+	font-size:0;
+	text-indent:-999px;
+	-moz-user-select:none;
+	-webkit-user-select:none;
+	user-select:none;
+	cursor:default;
+	width: 404px;
+	height: 90px;
+}
+h2 em{display:block;font:italic bold 200px/120px "Times New Roman",Times,Serif;text-indent:0;letter-spacing:-5px;color:rgba(216,226,244,0.3);}
+.link a{margin-right:1em;}
+.link,.texts{width:540px;margin:0 auto 15px;color:#505050;}
+.texts{line-height:2;}
+.texts dd{margin:0;padding:0 0 0 15px;}
+.texts ul{margin:0;padding:0;}
+.portal{color:#505050;text-align:center;white-space:nowrap;word-spacing:0.45em;}
+.portal a:link,.portal a:visited{color:#505050;word-spacing:0;}
+.portal a:hover,.portal a:active{color:#007ab7;}
+.portal span{display:inline-block;height:38px;line-height:35px;background:url(portal.png) repeat-x;}
+.portal span span{padding:0 0 0 20px;background:url(portal.png) no-repeat 0 -40px;}
+.portal span span span{padding:0 20px 0 0;background-position:100% -80px;}
+.STYLE1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 65px;
+}
+</style>
+<!--[if lte IE 8]>
+<style type="text/css">
+h2 em{color:#e4ebf8;}
+</style>
+<![endif]-->
+<script type="text/javascript">
+window.setTimeout("window.location.href='/'",3000);
+</script>
+</head>
+<body>
+    <h1></h1>
+    <p class="link">
+        <a href="/">&#9666;返回首页</a>
+        <a href="javascript:history.go(-1);">&#9666;返回上一页</a>
+    </p>
+    <dl class="texts">
+        <dt>我们正在联系火星总部查找您所需要的页面.请返回等待信息..</dt>
+<dd>
+            <ul>
+                <li>不要返回吗?</li>
+                <li>确定不要返回吗?</li>
+                <li>真的真的确定不要返回吗?</li>
+                <li>好吧.还是随便你要不要真的确定返回吧</li>
+            </ul>
+        </dd>
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </dl>
+    <center><iframe width="696px" style="_width:650px;" height="315" id="iframe_baidu" marginheight="0" marginwidth="0" scrolling="no" frameborder="0"></iframe></center>
+       <script>
+          var referrer = document.referrer;
+          referrer = referrer.substring(7, referrer.length);
+          referrer = referrer.substring(0, referrer.indexOf('/'));
+          var parentHost = "http://www.baidu.com/s?wd=site%3A" + referrer;
+          document.getElementById("iframe_baidu").setAttribute("src",parentHost);
+       </script>
+
+    </span></span></span></p>
+</body>
+</html>
+<script>
+function redirectToHost(){
+            	 var host = location.host;
+                 location.href = "http://" + host;
+         }
+
+var errorMsgData = {
+	"400":"请求出现语法错误",
+	"401":"没有访问权限",
+	"403":"服务器拒绝执行该请求",
+	"404":"指定的页面不存在",
+	"405":"请求方法对指定的资源不适用",
+	"406":"客户端无法接受相应数据",
+	"408":"等待请求时服务器超时",
+	"409":"请求与当前资源的状态冲突，导致请求无法完成",
+	"410":"请求的资源已不存在，并且没有转接地址",
+	"500":"服务器尝试执行请求时遇到了意外情况",
+	"501":"服务器不具备执行该请求所需的功能",
+	"502":"网关或代理服务器从上游服务器收到的响应无效",
+	"503":"服务器暂时无法处理该请求",
+	"504":"在等待上游服务器响应时，网关或代理服务器超时",
+	"505":"服务器不支持请求中所用的 HTTP 版本",
+	"1":"无法解析服务器的 DNS 地址",
+	"2":"连接失败",
+	"-7":"操作超时",
+	"-100":"服务器意外关闭了连接",
+	"-101":"连接已重置",
+	"-102":"服务器拒绝了连接",
+	"-104":"无法连接到服务器",
+	"-105":"无法解析服务器的 DNS 地址",
+	"-109":"无法访问该服务器",
+	"-138":"无法访问网络",
+	"-130":"代理服务器连接失败",
+	"-106":"互联网连接已中断",
+	"-401":"从缓存中读取数据时出现错误",
+	"-400":"缓存中未找到请求的条目",
+	"-331":"网络 IO 已暂停",
+	"-6":"无法找到该文件或目录",
+	"-310":"重定向过多",
+	"-324":"服务器已断开连接，且未发送任何数据",
+	"-346":"收到了来自服务器的重复标头",
+	"-349":"收到了来自服务器的重复标头",
+	"-350":"收到了来自服务器的重复标头",
+	"-118":"连接超时"
+};
+
+var eCode = document.getElementById("eCode").innerHTML;
+var eMsg = errorMsgData[eCode];
+document.title = eMsg;
+document.getElementById("eMsg").innerHTML = eMsg;
+document.getElementById("eMsg_t").innerHTML = eCode + "错误！";
+</script>
